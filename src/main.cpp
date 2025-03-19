@@ -1,9 +1,10 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include <WiFiNINA.h>
+#include "arduino_secrets.h"
 
-char ssid[] = "VM14FR3";
-char pass[] = "";
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 
 int status = WL_IDLE_STATUS;
 
