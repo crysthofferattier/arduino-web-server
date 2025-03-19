@@ -3,7 +3,7 @@
 #include <WiFiNINA.h>
 
 char ssid[] = "VM14FR3";
-char pass[] = "kqvqmTg15fLk4LybjR9f5ACnk";
+char pass[] = "";
 
 int status = WL_IDLE_STATUS;
 
