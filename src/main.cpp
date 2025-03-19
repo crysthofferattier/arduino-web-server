@@ -3,9 +3,6 @@
 #include <WiFiNINA.h>
 #include "arduino_secrets.h"
 
-char ssid[] = SECRET_SSID;
-char pass[] = SECRET_PASS;
-
 int status = WL_IDLE_STATUS;
 
 WiFiServer server(80);
@@ -61,14 +58,14 @@ void connectToNetwork()
   while (status != WL_CONNECTED)
   {
     Serial.print("Trying to connecto to: ");
-    Serial.println(ssid);
+    Serial.println(SECRET_SSID);
 
-    status = WiFi.begin(ssid, pass);
+    status = WiFi.begin(SECRET_SSID, SECRET_PASS);
 
     if (status == WL_CONNECTED)
     {
       Serial.print("Connected to: ");
-      Serial.println(ssid);
+      Serial.println(SECRET_SSID);
       Serial.print("IP: ");
       Serial.println(WiFi.localIP());
 
@@ -95,7 +92,7 @@ void jsonReturn()
 
   if (request.indexOf("GET") != -1)
   {
-    String response = "{\"name\": \"Crysthoffer Ratier\"}";
+    String response = "{\"name\": \"json data sample\"}";
 
     client.println("HTTP/1.1 200 OK");
     client.println("Content-Type: application/json");
