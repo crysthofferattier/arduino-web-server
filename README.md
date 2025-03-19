@@ -13,7 +13,7 @@ This project is a simple web server implemented on an Arduino Uno WiFi Rev2. It 
 - Wi-Fi network to connect to
 
 ## Libraries Used
-- `WiFiNINA`: Library to manage Wi-Fi connections on the Arduino Uno WiFi Rev2.
+- `WiFiNINA`: Library to manage Wi-Fi connections on the Arduino Uno WiFi Rev2. [link](https://docs.arduino.cc/libraries/wifinina/#WiFi%20Class)
 
 ## Setup Instructions
 
